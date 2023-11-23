@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lingerie</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 70px;
+        color: darkred;
+        font-style: oblique;
+      }
+      h2 {
+        text-align: center;
+        color: rgb(240, 216, 138);
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 20px;
+        margin: 20px;
+        color: rgb(71, 67, 67);
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: blueviolet;
+        color: #f8d2d2;
+        font-size: 15px;
+        padding: 15px 20px;
+        border: 1px solid blueviolet;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0.3, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #eeb8b8;
+        color: blueviolet;
+        cursor: pointer;
+      }
+      div {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 15px 50px;
+        background: linear-gradient(#e66465, #9198e5);
+      }
+      .learn {
+        color: blueviolet;
+        font-size: 20px;
+      }
+      .learn:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Lingerie World</h1>
+      <h2>
+        <em>"Lingerie is that inner, secret glamour"</em>
+      </h2>
+      <hr />
+      <img
+        src="https://th.bing.com/th/id/OIP.iOHaknDt-fHcLchLUZtOfgHaJ4?pid=ImgDet&w=179&h=238&c=7"
+        width="300"
+      />
+      <hr />
+      <p>
+        <strong>Lingerie</strong> is a category of primarily women's clothing
+        including undergarments (mainly brassieres), sleepwear, and lightweight
+        robes. The choice of the word is often motivated by an intention to
+        imply that the garments are alluring, fashionable, or both.
+        <strong>Lingerie</strong> is made of lightweight, stretchy, smooth,
+        sheer or decorative fabrics such as silk, satin, Lycra, charmeuse,
+        chiffon, or (especially and traditionally) lace. These fabrics can be
+        made of various natural fibres like silk, cotton or of various synthetic
+        fibres such as polyester or nylon.
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Lingerie"
+          target="_blank"
+          class="learn"
+        >
+          Learn more
+        </a>
+      </p>
+      <button>Check it Out</button>
+      <p>This page was built by Bisola</p>
+    </div>
+    <script>
+      function loveLingerie() {
+        let question = prompt(
+          "How do you choose your lingerie, Comfort or Beauty?"
+        );
+        if (question === "Beauty") {
+          alert("A pretty lingerie makes it all better!");
+        } else {
+          if (question === "Comfort") {
+            alert(
+              "Never underestimate the power of a good lingerie on a bad day!"
+            );
+          }
+        }
+      }
+      let checkButton = document.querySelector("button");
+      checkButton.addEventListener("click", loveLingerie);
+    </script>
+  </body>
+</html>
